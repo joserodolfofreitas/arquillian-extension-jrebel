@@ -8,4 +8,12 @@
         <property name="deploymentExportPath">target/</property>
     </engine>
 
+    <extension qualifier="webdriver">
+        <property name="javascriptEnabled">true</property>
+        <property name="browserCapabilities">chrome</property>
+        <property name="remoteReusable">${remoteReusable}</property>
+        <property name="remoteAddress">http://localhost:4444/wd/hub/</property>
+        <property name="chromeDriverBinary">src/test/resources/chromedriver_win.exe</property>
+    </extension>
+
 </arquillian>
